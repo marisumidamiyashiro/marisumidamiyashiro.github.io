@@ -1,5 +1,5 @@
-# portfolio_v1
+# current updated portfolio
 
-Mari's portfolio version 1
+Mari's current portfolio!
 
-[demo](https://marisumidamiyashiro.github.io/portfolio_v1/)
+[demo](https://marisumidamiyashiro.github.io/)
