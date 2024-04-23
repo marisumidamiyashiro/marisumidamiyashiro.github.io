@@ -6,8 +6,6 @@ $gridgap: 2%;
     margin-left: -($gridgap / 2);
     margin-right: -($gridgap / 2);
     justify-content: center;
-    align-items: center;
-    margin-bottom: 3em;
 
     &.swapped {
         flex-direction: row-reverse;
@@ -15,7 +13,7 @@ $gridgap: 2%;
 
     >* {
         margin: ($gridgap / 2);
-        flex-grow: 1;
+        // flex-grow: 1;
     }
 
     .centered {
