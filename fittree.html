@@ -1,162 +1,241 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FitTree Mobile App</title>
-    <meta name="description" content="FitTree Mobile App portfolio entry" />
 
-    <!-- VIEWPORT -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css">
+    <!-- ADOBE FONTS -->
+    <link rel="stylesheet" href="https://use.typekit.net/dmm1cpy.css">
 
-    <!-- ADOBE FONTS-->
-    <link rel="stylesheet" href="https://use.typekit.net/muz4avn.css">
-
-    <!-- MAIN CSS -->
-    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <!-- JS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 </head>
 
-<body class="fittree">
-
-    <header class="site-header">
-        <div class="site-id">
-            <h1><a href="index.html">Mari Sumida-Miyashiro</a></h1>
-        </div>
-
+<body>
+    <header class="header-nav">
         <nav class="site-nav">
             <ul>
-                <li><a href="index.html#project">work</a></li>
-                <li><a href="about.html">about</a></li>  
+                <li>
+                    <a href="index.html">
+                        <img src="images/house.svg" alt="" class="nav-icon">
+                        <span class="nav-text">home</span></a>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html#projects">
+                        <img src="images/work.svg" alt="" class="nav-icon">
+                        <span class="nav-text">projects</span></a>
+                    </a>
+                </li>
             </ul>
         </nav>
+        <h3 class="vertical-text">mari&nbspseymour</h3>
     </header>
 
-    <main class="site-main">
-
-        <section class="hero">
-
+    <main class="casestudy-main">
+        <section class="casestudy-project-overview">
             <div class="container">
-
-                <div class="row">
-
-                    <div class="one-whole">
-                        <h1>FitTree Mobile App</h1>
-                        <p>FitTree is a fitness app that allows you to cultivate a virtual garden while offering users the option to subscribe and plant real trees worldwide. This app seamlessly integrates with your smartphone's fitness tracking capabilities to monitor your movements and step count during exercise. Users can nurture a virtual garden, with various plants reflecting the calories burned during their workout sessions. One of the app's key features is the subscription option, granting users the opportunity to have real trees planted globally on their behalf. The more a user exercises, the more trees they can plant!</p>
-                        
-                        <div class="project-nav">
-                            <a href="#challengecontent" class="button">challenge & content</a>
-                            <a href="#process" class="button">process & insight</a>
-                            <a href="#solution" class="button">solution</a>
+                <div class="casestudy-hero">
+                    <h1 class="casestudy-title">FitTree Mobile App</h1>
+                    <div class="row casestudy-overview">
+                        <div class="one-whole casestudy-hero-image">
+                            <img src="images/fit-tree/fittree-mockup_v1.jpg" alt="">
                         </div>
+                        <div class="two-thirds">
+                            <p>FitTree is a fictional fitness app that allows you to cultivate a virtual garden while
+                                offering users the option to subscribe and plant real trees worldwide. This app
+                                seamlessly integrates with your smartphone's fitness tracking capabilities, monitoring
+                                your movements and step count during exercise. Users can nurture a virtual garden, with
+                                various plants reflecting the calories burned during their workout sessions. One of the
+                                app's key features is the subscription option, granting users the opportunity to have
+                                real trees planted globally on their behalf. The more a user exercises, the more trees
+                                they can plant. This offers a rewarding incentive for active users.</p>
+                        </div>
+                        <div class="one-third casestudy-details">
+                            <div class="casestudy-software">
+                                <h3>software</h3>
+                                <span>Illustrator</span>
+                                <span>Photoshop</span>
+                                <span>XD</span>
+                                <span>After Effects</span>
+                                <span>Procreate on iPad</span>
 
+                            </div>
+                            <div class="casestudy-year">
+                                <h3>year</h3>
+                                <span>2022</span>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
-                
             </div>
-
         </section>
 
-        <section id="challengecontent">
-
+        <section class="casestudy-project-process">
             <div class="container">
-
-                <h2 class="section-heading">Challenge & Content</h2>
-        
-                <div class="row">
-                    <div class="two-thirds">
-                        <img src="img/fittree_projectbrief.png" alt="project brief">
+                <div class="row casestudy-process caption">
+                    <h3 class="one-whole image-caption section-line">ideation</h3>
+                    <div class="one-half body-copy">
+                        <p>Because I have chosen to create a fitness app with the ability to grow a virtual garden, my
+                            main challenge was to ensure that the user would not become overwhelmed with the amount of
+                            content involved. This involved making an app that was easy to&nbspnavigate.</p>
+                        <p>I wanted to select colors to fit the overarching garden theme, which involved a lot of greens
+                            and some neutral&nbsptones. Creating the base structure allowed me to know what content I
+                            needed to focus on in order to move towards the Hi&nbsp-&nbspFidelity&nbspWireframes. </p>
                     </div>
-                    <div class="one-third">
-                        <h3>Project Brief</h3>
-                        <p>As with any project, the initial step is to create a project brief to establish clear objectives and define the design direction. The primary challenge lay in developing an app that seamlessly combines fitness, gamification elements, and a subscription model without overwhelming the user.</p>
+                    <div class="one-half casestudy-process-images">
+                        <img src="images/fit-tree/lofi-wireframe.png" alt="">
                     </div>
                 </div>
-        
-                <h2 id="process" class="section-heading">Process & Insight</h2>
-
-                <div class="row swapped">
-                    <div class="one-half">
-                        <img src="img/fittree_lofiwireframe.jpg" alt="lo-fi wireframe">
-                    </div>
-                    <div class="process one-half">
-
-                        <img src="img/FitTree_StyleTileB.jpg" alt="FitTree Style Tile Option B">
-
-                        <h3>Style Tiles & Lo-Fi Wireframe</h3>
-
-                        <p>Selecting colors to align with the overarching theme is crucial. Given that my app revolves around exercise and nature, I recognized the importance of incorporating abundant greens and browns into my design. After undergoing a preliminary design process, I concluded that a green-themed app would be the most suitable choice.</p>
-
-                        <p>Establishing a solid base structure is equally vital to determine the required images and videos for crafting an optimal design. While working on the wireframes, I noticed a greater need for graphics than I had initially anticipated. This realization helped me prioritize tasks and avoid last-minute rushes to complete the mobile app.</p>
-
-                        <div class="squares">
-                            <h2 class="square"></h2>
-                            <h2 class="square"></h2>
-                            <h2 class="square"></h2>
-                            <h2 class="square"></h2>
-                            <h2 class="square"></h2>
+                <div class="row casestudy-process caption">
+                    <h3 class="one-whole image-caption section-line swapped">type&nbspand&nbspcolor</h3>
+                    <div class="one-whole casestudy-process-images">
+                        <div class="fittree-squares">
+                            <div class="square">
+                                <h4>#1A2207</h4>
+                            </div>
+                            <div class="square">
+                                <h4>#1E3F00</h4>
+                            </div>
+                            <div class="square">
+                                <h4>#465705</h4>
+                            </div>
+                            <div class="square">
+                                <h4>#75982C</h4>
+                            </div>
+                            <div class="square">
+                                <h4>#D1EAA0</h4>
+                            </div>
+                            <div class="square">
+                                <h4>#E8D3BC</h4>
+                            </div>
                         </div>
-
                     </div>
-                    
+                    <div class="one-whole casestudy-process-images">
+                        <div class="fittree-type fittree-images">
+                            <img src="images/fit-tree/type-brevia.png" alt="">
+                            <img src="images/fit-tree/type-feltro.png" alt="">
+                            <img src="images/fit-tree/type-rinse.png" alt="">
+                        </div>
+                    </div>
                 </div>
-                
-                <h2 id="solution" class="section-heading">Solution</h2>
-
+                <div class="row casestudy-process caption">
+                    <h3 class="one-whole image-caption section-line">
+                        the&nbspplants</h3>
+                    <div class="one-whole casestudy-process-images fittree-images">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/fit-tree/rose-pink.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/fit-tree/rose-red.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/fit-tree/daisy.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/fit-tree/bush-blueflower.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/fit-tree/bush-pinkflower.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/fit-tree/bush-leaves.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/fit-tree/tree-pine.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row casestudy-process caption">
+                    <h3 class="one-whole image-caption section-line swapped">design</h3>
+                    <div class="one-whole body-copy">
+                        <p>In the end, I believe I achieved a cohesive design that enables users to easily navigate
+                            every section of the app. In the final design, I made significant changes to the navigation
+                            system. Instead of a side tab on your screen, it's now fixed at the bottom and accessible
+                            through a tree icon. Profile images now dominate the top portion of the screen and appear as
+                            circles when browsing your friends list. One of my biggest challenges was finding the right
+                            place for the FitTree video. After careful consideration, I decided to include it within the
+                            'Learn More' section of the app because it's the ideal location for users who want to
+                            understand what FitTree is all about.</p>
+                        <a href="https://xd.adobe.com/view/d740cf2a-ec38-4404-b602-a985105ebaee-8213/?fullscreen"
+                            class="fittree-button" target="_blank">view the app</a>
+                    </div>
+                </div>
                 <div class="row">
-                    <div class="two-thirds">
-                        <img src="img/FitTree-MobileAppLayout.jpg" alt="mobile app layout">
+                    <div class="one-whole casestudy-process-images">
+                        <img src="images/fit-tree/fittree-mockup_v1.jpg" alt="">
                     </div>
-                    <div class="one-third">
-                        <h3>Final Design</h3>
-                        <p>In the end, I believe I achieved a cohesive design that enables users to easily navigate every section of the app. In the final design, I made significant changes to the navigation system. Instead of a side tab on your screen, it's now fixed at the bottom and accessible through a tree icon. Profile images now dominate the top portion of the screen and appear as circles when browsing your friends list. One of my biggest challenges was finding the right place for the FitTree video. After careful consideration, I decided to include it within the 'Learn More' section of the app because it's the ideal location for users who want to understand what FitTree is all&nbsp;about.</p>
-                        <a href="https://xd.adobe.com/view/98d45be0-0156-4242-8906-7f5b399b6c85-cd87/" class="button" target="_blank">view the app</a>
+                    <div class="one-whole casestudy-process-images">
+                        <img src="images/fit-tree/fittree-mockup_v2.png" alt="">
                     </div>
                 </div>
+        </section>
 
-                <hr/>
-        
-                <div class="row align-top">
-                    <div class="one-fourth">
-                        <ul>
-                            <li><span>Client:</span></li>
-                            <li><span>Deliverable:</span></li>
-                            <li><span>Year:</span></li>
-                            <li><span>Software:</span></li>
-                        </ul>
+        <section class="casestudy-more-projects">
+            <div class="container">
+                <div class="more-projects">
+                    <div class="previous-project">
+                        <a href="magazine-layout.html">
+                            <span class="fill-left">previous&nbspproject</span>
+                        </a>
                     </div>
-                    <div class="three-fourths">
-                        <ul>
-                            <li>Instructor</li>
-                            <li>Mobile App</li>
-                            <li>2022</li>
-                            <li>XD | Illustrator | PhotoShop | AfterEffects</li>
-                        </ul>
+                    <div class="next-project">
+                        <a href="menuicon.html">
+                            <span class="fill-right">next&nbspproject</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
 
     </main>
 
-    <footer class="site-footer">
+    <footer class="footer-nav">
         <nav class="site-nav">
             <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="about.html">about</a></li>
-
+                <li>
+                    <a href="aboutme.html">
+                        <img src="images/info.svg" alt="" class="nav-icon">
+                        <span class="nav-text">about&nbspme</span></a>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <span class="footer-tagline">creativity knows no limits</span>
+    </footer>
+    <footer class="mobile-nav">
+        <nav class="site-nav">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="images/house.svg" alt="" class="nav-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html#projects">
+                        <img src="images/work.svg" alt="" class="nav-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="aboutme.html">
+                        <img src="images/info.svg" alt="" class="nav-icon">
+                    </a>
+                </li>
             </ul>
         </nav>
     </footer>
 
-    <!-- SMOOTH SCROLL BY CHRIS FERDINANDI https://github.com/cferdinandi/smooth-scroll -->
-
-    <script src="js/smooth-scroll.polyfills.min.js"></script>
-    <script>
-        var scroll = new SmoothScroll('a[href*="#"]', {
-            speed: 800,
-            speedAsDuration: true
-        });
-    </script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 

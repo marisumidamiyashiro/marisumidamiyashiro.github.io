@@ -1,91 +1,183 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Mari's Portfolio</title>
-    <meta name="description" content="Mari's portfolio" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mari's Portfolio v2</title>
+    <link rel="stylesheet" href="css/style.css">
 
-    <!-- VIEWPORT -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- ADOBE FONTS-->
     <link rel="stylesheet" href="https://use.typekit.net/muz4avn.css">
-
-    <!-- MAIN CSS -->
-    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://use.typekit.net/dmm1cpy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 </head>
 
 <body>
 
-    <header class="site-header">
-        <div class="site-id">
-            <h1><a href="#">Mari Sumida-Miyashiro</a></h1>
-        </div>
-
+    <header class="header-nav">
         <nav class="site-nav">
             <ul>
-                <li><a href="#project">work</a></li>
-                <li><a href="about.html">about</a></li>
+                <li>
+                    <a href="#home">
+                        <img src="images/house.svg" alt="" class="nav-icon">
+                        <span class="nav-text">home</span></a>
+                    </a>
+                </li>
+                <li>
+                    <a href="#projects">
+                        <img src="images/work.svg" alt="" class="nav-icon">
+                        <span class="nav-text">projects</span></a>
+                    </a>
+                </li>
             </ul>
         </nav>
+        <h3 class="vertical-text">mari&nbspseymour</h3>
     </header>
 
-    <main class="site-main">
-        <section class="hero">
+
+    <main>
+        <section id="home" class="hero">
             <div class="container">
-                <h1>Hello</h1>
-                <p>I am currently studying Interface Design within KCC's New Media Arts program. I have always had a love for art and enjoy exploring new creative outlets. I hope to continue my creative journey by pushing the boundaries of visual design while working alongside fellow&nbspcreatives.</p>
-                <a href="#project" class="button">view my projects</a>
+                <div class="title">
+                    <h1>hello!</h1>
+                    <h2>i'm
+                        <span class="txt-rotate" data-period="2000"
+                            data-rotate='[ "a designer.", "a developer.", "a creator.", "mari." ]'></span>
+                    </h2>
+                </div>
+                <div class="moving-down-arrow">
+                    <div class="arrow-down"></div>
+                    <!-- <div class="arrow-down"></div> -->
+                    <!-- <div class="arrow-down"></div> -->
+                </div>
             </div>
         </section>
-        <section id="project">
-
+        <section id="projects" class="projects">
             <div class="container">
+                <div class="title">
+                    <h3>My Work</h3>
+                </div>
+                <div class="work">
 
-                <h2 class="section-heading">my projects</h2>
-
-                <div class="row">
-                    <div class="projects one-third">
-                        <a href="fittree.html">
-                            <p>FitTree Mobile App</p>
-                            <img src="img/FitTree-MobileAppLayout.jpg">
-                    </a>
-                    </div>
-                    <div class="projects one-third">
+                    <div class="card">
                         <a href="booktrilogy.html">
-                            <p>Book Trilogy</p>
-                            <img src="img/Trilogy_MockUp_Reedit.jpg">
+                            <div class="poster">
+                                <img src="images/book-trilogy/book-trilogy_v5.jpg" alt="mockup of all 3 designed books">
+                            </div>
+                            <div class="details">
+                                <h1>Book Trilogy</h1>
+                            </div>
                         </a>
                     </div>
-                    <div class="projects one-third">
+
+                    <div class="card">
+                        <a href="magazine-layout.html">
+                            <div class="poster">
+                                <img src="images/magazine-layout/magazine-layout-mockups/magazine-layout-1-v2.jpg"
+                                    alt="">
+                            </div>
+                            <div class="details">
+                                <h1>Magazine Layout</h1>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="fittree.html">
+                            <div class="poster">
+                                <img src="images/fit-tree/fittree-mockup_v2.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h1>FitTree Mobile App</h1>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="menuicon.html">
+                            <div class="poster">
+                                <img src="images/menu-icon/menuicon-mockup.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <h1>Menu Icon</h1>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
                         <a href="themoon.html">
-                            <p>The Moon Website</p>
-                            <img src="img/TheMoonWebsite.png">
+                            <div class="poster">
+                                <img src="images/the-moon/themoon-mockup-v2.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <h1>NASA Moon Website</h1>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="quest.html">
+                            <div class="poster">
+                                <img src="images/quest/quest-assets-jpg/QUEST-PackagingPhoto_v2.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <h1>QUEST mead</h1>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="illustrations.html">
+                            <div class="poster">
+                                <img src="images/illustartions/rose-1.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <h1>Illustrations</h1>
+                            </div>
                         </a>
                     </div>
                 </div>
+            </div>
         </section>
-
     </main>
 
-    <footer class="site-footer">
+
+    <footer class="footer-nav">
         <nav class="site-nav">
             <ul>
-                <li><a href="about.html">about</a></li>
+                <li>
+                    <a href="aboutme.html">
+                        <img src="images/info.svg" alt="" class="nav-icon">
+                        <span class="nav-text">about&nbspme</span></a>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <span class="footer-tagline">creativity knows no limits</span>
+    </footer>
+    <footer class="mobile-nav">
+        <nav class="site-nav">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="images/house.svg" alt="" class="nav-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html#projects">
+                        <img src="images/work.svg" alt="" class="nav-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="aboutme.html">
+                        <img src="images/info.svg" alt="" class="nav-icon">
+                    </a>
+                </li>
             </ul>
         </nav>
     </footer>
 
-    <!-- SMOOTH SCROLL BY CHRIS FERDINANDI https://github.com/cferdinandi/smooth-scroll -->
-
-    <script src="js/smooth-scroll.polyfills.min.js"></script>
-    <script>
-        var scroll = new SmoothScroll('a[href*="#"]', {
-            speed: 800,
-            speedAsDuration: true
-        });
-    </script>
+    <script src="js/script.js"></script>
+    <script src="js/type.js"></script>
 
 </body>
 

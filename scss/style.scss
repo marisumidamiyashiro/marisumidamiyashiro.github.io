@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// VARIABLES
+// $light-pink: rgb(250, 187, 187);
+// $sand: rgb(209, 181, 173);
+// $coffee: rgb(77, 52, 49);
+// $coral: #F88379;
+
+$light-pink: rgb(255, 214, 214);
+$sand: rgb(238, 229, 227);
+$coral: #ffadad;
+$coffee: #333;
+
+$script: "liebelotte-swell", sans-serif;
+$body: "apparat-light", sans-serif;
+$title: "the-seasons", sans-serif;
+
+$border-width: 2px;
+
+
+
+
+@import "partials/header";
+@import "partials/footer";
+@import "partials/projectcards";
+@import "partials/structure";
+@import "partials/case-study";
+@import "partials/typography";
+@import "partials/grid";
+@import "partials/media";
+@import "partials/gist";
+@import "partials/swiperjs";
+@import "partials/animation";

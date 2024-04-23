@@ -1,0 +1,630 @@
+.casestudy-main {
+
+    width: 100%;
+
+    img,
+    video {
+        // border: .25px solid rgba(88, 88, 88, 0.7);
+        box-shadow: 5px 5px 5px rgba(88, 88, 88, 0.7);
+    }
+
+    .casestudy-project-overview {
+
+        margin-bottom: 10em;
+
+        .casestudy-hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .casestudy-title {
+                font-family: $title;
+                color: $coffee;
+                margin-top: 1.5em;
+                font-size: clamp(3em, 9vw, 9em);
+                text-align: center;
+                text-transform: none;
+            }
+
+            .casestudy-hero-image,
+            .casestudy-hero-video {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin-bottom: 5em;
+
+                img,
+                video {
+                    height: 700px;
+                }
+            }
+
+            .casestudy-hero-embed {
+                margin-bottom: 5em;
+            }
+
+            .casestudy-overview {
+                display: flex;
+                flex: wrap;
+                align-items: center;
+                justify-content: space-between;
+                width: 60%;
+                margin: 5em auto;
+
+                p {
+                    font-family: $body;
+                    line-height: 1.5;
+                }
+
+                .casestudy-software,
+                .casestudy-year {
+                    display: flex;
+                    flex-direction: column;
+
+                    h3 {
+                        font-family: $title;
+                        font-size: clamp(1.5em, 2vw, 2em);
+                        margin-top: .5em;
+                        text-transform: none;
+                    }
+
+                    span {
+                        font-family: $body;
+                        line-height: 1.5;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .casestudy-project-process {
+        overflow: hidden;
+
+        .casestudy-process {
+            // background-color: gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 3em;
+            margin-bottom: 3em;
+
+            p {
+                // background-color: #fff;
+                padding-bottom: .9em;
+                font-family: $body;
+                line-height: 1.5;
+            }
+
+            // .one-whole {
+            //     display: flex;
+            //     justify-content: center;
+            //     align-items: center;
+            // }
+
+            .body-copy {
+                // border: 1px solid #333;
+                // box-shadow: 15px 15px 0 #333;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                // align-items: center;
+
+                h4 {
+                    line-height: 1.5;
+                }
+            }
+
+        }
+
+        .casestudy-process-images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            &.quest {
+                img {
+                    border: none;
+                    box-shadow: none;
+                }
+            }
+
+            .image-collection {
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        .casestudy-process-videos {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .smaller {
+            height: 250px;
+            margin: 0;
+        }
+
+        img {
+            max-height: 750px;
+            max-width: 100%;
+            margin: 1em;
+        }
+
+        .caption {
+            display: flex;
+            align-items: start;
+
+            .image-caption {
+                font-family: $title;
+                text-transform: capitalize;
+                font-size: clamp(2em, 5vw, 5em);
+                margin: 1em 0;
+            }
+
+            .section-line {
+                position: relative;
+                display: flex;
+                align-items: center;
+                gap: .5em;
+
+                &:after {
+                    content: '';
+                    width: 100%;
+                    height: $border-width;
+                    border-bottom: $border-width solid $coffee;
+                    z-index: -1;
+                }
+
+            }
+
+            .section-line.swapped {
+                flex-direction: row-reverse;
+            }
+        }
+    }
+
+    .casestudy-more-projects {
+        display: flex;
+        margin: 0 auto;
+
+        .container {
+            width: 800px;
+
+
+
+            .more-projects {
+                display: flex;
+                justify-content: space-between;
+
+                .previous-project,
+                .next-project {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    color: $coral;
+                    font-family: $title;
+                    font-size: 2em;
+                    font-weight: 700;
+                    line-height: 3;
+                    transition: all .3s ease-out;
+
+                    &:hover {
+                        color: $coffee;
+                    }
+                }
+            }
+        }
+
+        margin-bottom: 10em;
+    }
+}
+
+// BOOK TRILOGY
+
+.bt-images {
+    height: 500px;
+    max-width: 100%;
+}
+
+// FITTREE MOBILE APP
+
+.fittree-squares {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: $body;
+
+    :nth-child(1) {
+        background-color: #1A2207;
+    }
+
+    :nth-child(2) {
+        background-color: #1E3F00;
+    }
+
+    :nth-child(3) {
+        background-color: #465705;
+    }
+
+    :nth-child(4) {
+        background-color: #75982C;
+    }
+
+    :nth-child(5) {
+        background-color: #D1EAA0;
+    }
+
+    :nth-child(6) {
+        background-color: #E8D3BC;
+    }
+
+    .square {
+        width: 100px;
+        height: 100px;
+        margin: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h4 {
+            background-color: transparent;
+            color: white;
+        }
+    }
+}
+
+.fittree-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        height: 50px;
+        border: none;
+        box-shadow: none;
+    }
+}
+
+.fittree-images {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    img {
+        border: none;
+        box-shadow: none;
+    }
+}
+
+.fittree-button {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $body;
+    font-weight: 700;
+    color: $coffee;
+    padding: 1.5em;
+    background-color: $light-pink;
+    border-radius: 24px;
+    margin: .5em;
+
+    &:hover {
+        background-color: $coffee;
+        color: $coral;
+        font-style: italic;
+    }
+}
+
+// MENU ICON
+
+.menu-icon-img {
+    max-height: 300px;
+    object-fit: cover;
+    width: auto;
+    // border: 3px solid red;
+}
+
+.menu-icon-codepen {
+
+    .one-whole {
+        display: block;
+
+        .codepen {
+            height: 300px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid;
+            margin: 1em 0;
+            padding: 1em;
+        }
+    }
+
+
+}
+
+// THE MOON
+
+.themoon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .circle {
+        background-color: $coffee;
+        border: 1px solid $coffee;
+        margin: 1em;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+    }
+
+    // :nth-child(1) {
+    //     border: 1px solid red;
+    // }
+
+    :nth-child(2) {
+        box-shadow: inset -20px 0 0 0 #fff;
+    }
+
+    :nth-child(3) {
+        position: relative;
+        overflow: hidden;
+
+        &:after {
+            content: "";
+            height: 100%;
+            width: 50%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: white;
+            border-radius: 0 100% 100% 0;
+        }
+    }
+
+    :nth-child(4) {
+        background: white;
+        box-shadow: inset 20px 0 0 0 $coffee;
+    }
+
+    :nth-child(5) {
+        background: white;
+    }
+
+    :nth-child(6) {
+        transform: rotate(180deg);
+        background: white;
+        box-shadow: inset 20px 0 0 0 $coffee;
+    }
+
+    :nth-child(7) {
+        transform: rotate(180deg);
+        position: relative;
+        overflow: hidden;
+
+        &:after {
+            content: "";
+            height: 100%;
+            width: 50%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: white;
+            border-radius: 0 100% 100% 0;
+        }
+    }
+
+    :nth-child(8) {
+        transform: rotate(180deg);
+        box-shadow: inset -20px 0 0 0 #fff;
+    }
+}
+
+.code-block {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.code-block .moon-wrapper {
+    width: 100px;
+    height: 100px;
+    margin: 50px 150px 50px 50px;
+    position: relative;
+    /*   overflow: hidden; */
+}
+
+.code-block .moon {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: 1px solid black;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.code-block .mask {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: 1px dashed red;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.code-block .waxing-crescent .mask {
+    translate: 100% 0;
+    border-color: red;
+    animation-name: waxing-crescent;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes waxing-crescent {
+    0% {
+        translate: 100% 0;
+        border-color: red;
+    }
+
+    30% {
+        translate: 25% 0;
+        border-color: white;
+    }
+
+    60% {
+        translate: 25% 0;
+        border-color: white;
+    }
+
+    90% {
+        translate: 100% 0;
+        border-color: red;
+    }
+}
+
+.code-block .first-quarter .mask {
+    border-radius: 0;
+    translate: 100% 0;
+    border-color: black;
+    animation-name: first-quarter;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes first-quarter {
+    0% {
+        translate: 100% 0;
+        border-color: black;
+    }
+
+    30% {
+        translate: 50% 0;
+        border-color: white;
+    }
+
+    60% {
+        translate: 50% 0;
+        border-color: white;
+    }
+
+    90% {
+        translate: 100% 0;
+        border-color: black;
+    }
+}
+
+// QUEST 
+
+.quest-squares {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: $body;
+
+    :nth-child(1) {
+        background-color: #000000;
+        color: white;
+    }
+
+    :nth-child(2) {
+        background-color: #00AD95;
+    }
+
+    :nth-child(3) {
+        background-color: #FAAC72;
+    }
+
+    :nth-child(4) {
+        background-color: #E6E6E6;
+    }
+
+    :nth-child(5) {
+        background-color: #81298E;
+    }
+
+    :nth-child(6) {
+        background-color: #ACD037;
+    }
+
+    :nth-child(7) {
+        background-color: #F1607D;
+    }
+
+    :nth-child(8) {
+        background-color: #EFE128;
+    }
+
+    .square {
+        width: 100px;
+        height: 100px;
+        margin: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h4 {
+            background-color: transparent;
+            color: white;
+        }
+    }
+}
+
+.quest-logo {
+    max-height: 300px;
+}
+
+// ILLUSTRATIONS
+
+.illustrations {
+
+    .illustrations-images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        img {
+            max-height: 500px;
+            margin: .5em;
+        }
+    }
+}
+
+// BUTTONS
+
+.casestudy-process {
+    .button {
+        text-decoration: none;
+        padding: 1em 1.5em;
+        margin: .5em;
+        background-color: $coffee;
+        color: $light-pink;
+        transition: all .3s ease-out;
+
+        &:hover {
+            background-color: $light-pink;
+            color: $coffee;
+        }
+    }
+}

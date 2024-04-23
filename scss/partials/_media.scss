@@ -1,0 +1,252 @@
+img {
+    height: clamp(200px, 100%, 400px);
+    object-fit: cover;
+}
+
+// MEDIA QUERIES
+
+@media (max-width: 767px) {
+
+    // GIST SCRIPT
+    .gist {
+        .gist-file {
+            max-width: 300px;
+            // border: 3px solid red !important;
+
+        }
+    }
+
+    .swiper {
+        max-width: 300px;
+        max-height: 500px;
+
+        img {
+            height: 300px;
+        }
+    }
+
+    // IMAGES
+
+    img,
+    video {
+        height: 200px;
+        max-width: 100%;
+    }
+
+    // HEADER AND FOOTER NAV
+
+    .header-nav,
+    .footer-nav,
+    .footer-tagline,
+    .arrow-left,
+    .arrow-right {
+        position: absolute;
+        left: -99999px;
+        top: -99999px;
+    }
+
+    .mobile-nav {
+        position: fixed;
+        bottom: 0;
+        height: 75px;
+        overflow: hidden;
+        width: 100%;
+        background: #fff;
+        z-index: 10;
+
+        ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        li {
+            list-style: none;
+            display: block;
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $coffee;
+                font-size: 1rem;
+                padding: 10px 50px;
+
+                .nav-icon {
+                    height: 50px;
+
+                    img {
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+
+    .caption {
+        align-items: center;
+        justify-content: center;
+
+        .section-line {
+            justify-content: center;
+        }
+    }
+
+    .code-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border: none;
+    }
+
+    // CONTAINER
+
+    .container {
+        max-width: 600px;
+        padding: 0;
+        margin: 0;
+    }
+
+    // MAIN
+
+    .casestudy-main {
+
+        p {
+            font-size: 85%;
+            text-align: center;
+        }
+
+        img {
+            max-height: 200px;
+            width: auto;
+            box-shadow: none;
+        }
+
+        .casestudy-project-overview {
+
+            .casestudy-hero {
+
+                .casestudy-overview {
+                    width: 100%;
+                    margin: 2em 0;
+
+                    .casestudy-software,
+                    .casestudy-year {
+                        justify-content: center;
+                        text-align: center;
+
+                        h3 {
+                            text-transform: uppercase;
+                        }
+
+                        span {
+                            font-size: 80%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .casestudy-project-process {
+            margin: 0;
+
+            .caption {
+                align-items: center;
+
+                .image-caption {
+                    margin: 0;
+                }
+            }
+
+            .casestudy-process {
+
+                .section-line {
+                    gap: 0;
+
+                    &:after {
+                        width: 0;
+                    }
+                }
+
+                .body-copy {
+                    min-width: 350px;
+                }
+
+                .casestudy-process-images,
+                .casestudy-process-videos {
+                    width: auto;
+                }
+            }
+        }
+
+        .casestudy-more-projects {
+            max-width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .more-projects {
+
+                .previous-project,
+                .next-project {
+                    padding: .5em;
+                }
+
+                a {
+                    border: 1px solid $coffee;
+                    padding: .5em;
+                }
+
+                span {
+                    font-size: 75%;
+                }
+            }
+
+        }
+
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 0;
+        flex-direction: column;
+
+        .one-half {
+            width: 100%;
+        }
+
+        .image-collection {
+            display: flex;
+            flex-direction: column;
+
+            img {
+                margin: 1.5em;
+            }
+        }
+
+    }
+
+    .fittree-type,
+    .fittree-images {
+        display: flex;
+        flex-wrap: wrap;
+
+        img {
+            max-height: 50px;
+        }
+    }
+
+    .illustrations-images {
+        flex-direction: column;
+    }
+}
+
+
+
+@media (min-width: 767px) {
+    .mobile-nav {
+        position: absolute;
+        left: -99999px;
+        top: -99999px;
+    }
+}
