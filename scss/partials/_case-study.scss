@@ -47,17 +47,14 @@
             .casestudy-overview {
                 display: flex;
                 flex: wrap;
-                align-items: start;
-                width: 60%;
-                margin: 0 auto;
+                justify-content: center;
 
                 p {
                     font-family: $body;
                     line-height: 1.5;
                 }
 
-                .casestudy-software,
-                .casestudy-year {
+                .casestudy-details {
                     display: flex;
                     flex-direction: column;
 
@@ -81,31 +78,9 @@
         overflow: hidden;
 
         .casestudy-process {
-            // background-color: gray;
             display: flex;
-            justify-content: center;
-            align-items: center;
             margin-top: 3em;
             margin-bottom: 3em;
-        }
-
-        .casestudy-process-images {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-
-            &.quest {
-                img {
-                    border: none;
-                    box-shadow: none;
-                }
-            }
-
-            .image-collection {
-                display: flex;
-                justify-content: center;
-            }
 
             .design {
                 display: flex;
@@ -129,6 +104,26 @@
                     }
                 }
             }
+        }
+
+        .casestudy-process-images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            &.quest {
+                img {
+                    border: none;
+                    box-shadow: none;
+                }
+            }
+
+            .image-collection {
+                display: flex;
+                justify-content: center;
+            }
+
+
         }
 
         .casestudy-process-videos {
