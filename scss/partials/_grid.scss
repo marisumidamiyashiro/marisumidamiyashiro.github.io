@@ -8,6 +8,7 @@ $gridgap: 2%;
 
     &.swapped {
         flex-direction: row-reverse;
+        flex-grow: 1;
     }
 
     .centered {

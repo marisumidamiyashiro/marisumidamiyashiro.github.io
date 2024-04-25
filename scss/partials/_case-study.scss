@@ -84,18 +84,23 @@
 
             .design {
                 display: flex;
-                justify-content: center;
+                flex-direction: column;
+                align-items: center;
 
                 .button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     text-align: center;
                     text-decoration: none;
+                    text-transform: uppercase;
+                    font-family: $body;
                     padding: 1em 1.5em;
                     margin: .5em;
                     background-color: $coffee;
                     color: $light-pink;
                     transition: all .3s ease-out;
-                    height: 50px;
-                    width: 150px;
+                    width: 200px;
                     border-radius: 10px;
 
                     &:hover {
@@ -110,6 +115,10 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+
+            img {
+                margin: 1em;
+            }
 
             &.quest {
                 img {
@@ -179,12 +188,10 @@
 
     .casestudy-more-projects {
         display: flex;
-        margin: 0 auto;
+        margin: 3em auto;
 
         .container {
             width: 800px;
-
-
 
             .more-projects {
                 display: flex;
@@ -294,7 +301,7 @@
     img {
         border: none;
         box-shadow: none;
-        margin: auto 3em;
+        padding: 2em;
     }
 }
 
@@ -341,8 +348,13 @@
             padding: 1em;
         }
     }
+}
 
+.menu-icon {
 
+    .body-copy {
+        margin-left: 2em;
+    }
 }
 
 // THE MOON
@@ -427,7 +439,7 @@
 .code-block {
     display: flex;
     align-items: center;
-    border: 1px solid black;
+    border: .5px solid rgba(0, 0, 0, 0.25);
     box-sizing: border-box;
 }
 

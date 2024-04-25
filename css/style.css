@@ -463,18 +463,23 @@ body {
 }
 .casestudy-main .casestudy-project-process .casestudy-process .design {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .casestudy-main .casestudy-project-process .casestudy-process .design .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
+  font-family: "apparat-light", sans-serif;
   padding: 1em 1.5em;
   margin: 0.5em;
   background-color: #333;
   color: rgb(255, 214, 214);
   transition: all 0.3s ease-out;
-  height: 50px;
-  width: 150px;
+  width: 200px;
   border-radius: 10px;
 }
 .casestudy-main .casestudy-project-process .casestudy-process .design .button:hover {
@@ -485,6 +490,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+.casestudy-main .casestudy-project-process .casestudy-process-images img {
+  margin: 1em;
 }
 .casestudy-main .casestudy-project-process .casestudy-process-images.quest img {
   border: none;
@@ -537,7 +545,7 @@ body {
 }
 .casestudy-main .casestudy-more-projects {
   display: flex;
-  margin: 0 auto;
+  margin: 3em auto;
   margin-bottom: 10em;
 }
 .casestudy-main .casestudy-more-projects .container {
@@ -630,7 +638,7 @@ body {
 .fittree-images img {
   border: none;
   box-shadow: none;
-  margin: auto 3em;
+  padding: 2em;
 }
 
 .fittree-button {
@@ -668,6 +676,10 @@ body {
   border: 2px solid;
   margin: 1em 0;
   padding: 1em;
+}
+
+.menu-icon .body-copy {
+  margin-left: 2em;
 }
 
 .themoon {
@@ -736,7 +748,7 @@ body {
 .code-block {
   display: flex;
   align-items: center;
-  border: 1px solid black;
+  border: 0.5px solid rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
 }
 
@@ -925,6 +937,7 @@ p {
 }
 .row.swapped {
   flex-direction: row-reverse;
+  flex-grow: 1;
 }
 .row .centered {
   margin: 0 auto;
