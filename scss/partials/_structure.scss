@@ -134,6 +134,7 @@ body {
 
         .about-me {
             display: flex;
+            flex-direction: column;
             align-items: center;
             // border: 1px solid blue;
             margin: 2em;
@@ -169,7 +170,6 @@ body {
 
         .contact-info {
             display: flex;
-            flex-direction: column;
 
             h3 {
                 font-family: $title;
@@ -181,11 +181,25 @@ body {
 
             span {
                 font-family: $body;
+                line-height: 1.5;
             }
 
             a {
+                display: flex;
+                align-items: center;
                 text-decoration: none;
                 font-family: $body;
+
+                img {
+                    width: 50px;
+                    margin: .5em;
+                }
+            }
+
+            .contact-details {
+                display: flex;
+                flex-direction: column;
+                margin: 0 2em;
             }
         }
     }

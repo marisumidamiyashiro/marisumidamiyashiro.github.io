@@ -27,6 +27,21 @@
                 text-transform: none;
             }
 
+            .casestudy-hero-image-absolute {
+                position: absolute;
+                top: 0;
+                left: 10%;
+                z-index: -1;
+
+                img {
+                    height: 400px;
+                    width: 100%;
+                    box-shadow: none;
+                    // filter: grayscale(100%);
+                    opacity: .5;
+                }
+            }
+
             .casestudy-hero-image,
             .casestudy-hero-video {
                 display: flex;
@@ -70,7 +85,6 @@
                     }
                 }
             }
-
         }
     }
 
@@ -131,8 +145,6 @@
                 display: flex;
                 justify-content: center;
             }
-
-
         }
 
         .casestudy-process-videos {
@@ -182,6 +194,12 @@
 
             .section-line.swapped {
                 flex-direction: row-reverse;
+            }
+        }
+
+        .image-no-dropshadow {
+            img {
+                box-shadow: none;
             }
         }
     }
