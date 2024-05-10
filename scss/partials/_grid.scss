@@ -6,6 +6,10 @@ $gridgap: 2%;
     margin-left: -($gridgap / 2);
     margin-right: -($gridgap / 2);
 
+    >* {
+        margin: 0 ($gridgap / 2);
+    }
+
     &.swapped {
         flex-direction: row-reverse;
         flex-grow: 1;

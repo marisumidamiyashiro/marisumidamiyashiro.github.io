@@ -10,21 +10,46 @@
 
     .casestudy-project-overview {
 
-        margin-bottom: 10em;
+        margin-bottom: 1em;
+
+        .casestudy-lineart {
+            max-width: 200px;
+            margin: 3em auto;
+
+            img {
+                box-shadow: none;
+            }
+        }
 
         .casestudy-hero {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            // align-items: center;
+            justify-content: space-between;
+            max-width: 1000px;
+            margin: 0 auto;
 
             .casestudy-title {
+                max-width: 400px;
+
+                h1 {
+                    font-family: $title;
+                    color: $coffee;
+                    margin: .5em auto;
+                    font-size: clamp(3em, 6vw, 6em);
+                    text-align: center;
+                    text-transform: none;
+                }
+            }
+
+            .casestudy-section-header {
                 font-family: $title;
                 color: $coffee;
-                margin: .5em auto;
-                font-size: clamp(3em, 9vw, 9em);
-                text-align: center;
                 text-transform: none;
+                font-size: clamp(1em, 1.5vw, 1.5em);
+                margin-top: 1em;
+            }
+
+            .intro-paragraph p {
+                margin: 0 auto;
             }
 
             .casestudy-hero-image-absolute {
@@ -68,21 +93,22 @@
                     font-family: $body;
                     line-height: 1.5;
                 }
+            }
 
-                .casestudy-details {
-                    display: flex;
-                    flex-direction: column;
+            .casestudy-details {
+                display: flex;
+                flex-direction: column;
+                margin-top: 1em;
 
-                    h3 {
-                        font-family: $title;
-                        font-size: clamp(1.5em, 2vw, 2em);
-                        text-transform: none;
-                    }
+                h3 {
+                    font-family: $title;
+                    font-size: clamp(1em, 1.5vw, 1.5em);
+                    text-transform: none;
+                }
 
-                    span {
-                        font-family: $body;
-                        line-height: 1.5;
-                    }
+                span {
+                    font-family: $body;
+                    line-height: 1.5;
                 }
             }
         }
@@ -94,7 +120,6 @@
         .casestudy-process {
             display: flex;
             margin-top: 3em;
-            margin-bottom: 3em;
 
             .design {
                 display: flex;
@@ -368,13 +393,6 @@
     }
 }
 
-.menu-icon {
-
-    .body-copy {
-        margin-left: 2em;
-    }
-}
-
 // THE MOON
 
 .themoon {
@@ -617,15 +635,28 @@
 
 .illustrations {
 
+    h1 {
+        font-family: $title;
+        text-transform: lowercase;
+        color: $coffee;
+        text-align: center;
+        margin: 1em auto;
+    }
+
     .illustrations-images {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
 
+
         img {
-            max-height: 500px;
+            max-height: 700px;
             margin: .5em;
+            box-shadow: none;
+            border: .5px solid #ccc;
+            padding: 1em;
         }
     }
 }
