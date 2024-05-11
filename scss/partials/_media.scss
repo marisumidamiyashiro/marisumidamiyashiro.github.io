@@ -238,10 +238,18 @@ img {
     .fittree-type,
     .fittree-images {
         display: flex;
+        justify-content: center;
 
         img {
             max-height: 50px;
             padding: 0;
+        }
+    }
+
+    .swiper.fittree-images {
+        img {
+            max-height: 200px;
+            object-fit: cover;
         }
     }
 
