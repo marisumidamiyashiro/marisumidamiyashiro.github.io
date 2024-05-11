@@ -1065,14 +1065,13 @@ img {
     position: fixed;
     bottom: 0;
     height: 75px;
-    overflow: hidden;
     width: 100%;
-    background: #fff;
+    background: rgb(238, 229, 227);
     z-index: 10;
   }
   .mobile-nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
   }
   .mobile-nav li {
     list-style: none;

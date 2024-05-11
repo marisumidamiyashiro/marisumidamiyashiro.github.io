@@ -48,14 +48,14 @@ img {
         position: fixed;
         bottom: 0;
         height: 75px;
-        overflow: hidden;
+        // overflow: hidden;
         width: 100%;
-        background: #fff;
+        background: $sand;
         z-index: 10;
 
         ul {
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
         }
 
         li {
