@@ -33,6 +33,20 @@ img {
         object-fit: cover;
     }
 
+    .casestudy-process-images {
+
+        img {
+            // border: 1px solid red;
+            margin: 1em 0 !important;
+        }
+    }
+
+    .casestudy-main {
+        video {
+            box-shadow: none;
+        }
+    }
+
     // HEADER AND FOOTER NAV
 
     .header-nav,
