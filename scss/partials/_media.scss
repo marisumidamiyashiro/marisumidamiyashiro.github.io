@@ -28,8 +28,9 @@ img {
 
     img,
     video {
-        height: 200px;
+        max-height: 300px;
         max-width: 100%;
+        object-fit: cover;
     }
 
     // HEADER AND FOOTER NAV
@@ -115,7 +116,7 @@ img {
         }
 
         img {
-            max-height: 200px;
+            // max-height: 200px;
             width: auto;
             box-shadow: none;
         }
@@ -130,8 +131,14 @@ img {
                 }
             }
 
+            .row-mobile {
+                display: flex;
+                flex-direction: row;
+            }
+
             .casestudy-hero {
                 flex-direction: column;
+                justify-content: center;
 
                 .casestudy-overview {
                     width: 100%;
@@ -187,7 +194,7 @@ img {
         }
 
         .casestudy-more-projects {
-            max-width: 300px;
+            // max-width: 300px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -197,15 +204,18 @@ img {
                 .previous-project,
                 .next-project {
                     padding: .5em;
+                    justify-content: space-between;
                 }
 
-                a {
-                    border: 1px solid $coffee;
-                    padding: .5em;
-                }
+                // a {
+                //     border: 1px solid $coffee;
+                //     padding: .5em;
+                // }
 
                 span {
-                    font-size: 75%;
+                    font-family: $body;
+                    text-transform: uppercase;
+                    font-size: 50%;
                 }
             }
 
@@ -223,24 +233,15 @@ img {
             width: 100%;
         }
 
-        .image-collection {
-            display: flex;
-            flex-direction: column;
-
-            img {
-                margin: 1.5em;
-            }
-        }
-
     }
 
     .fittree-type,
     .fittree-images {
         display: flex;
-        flex-wrap: wrap;
 
         img {
             max-height: 50px;
+            padding: 0;
         }
     }
 

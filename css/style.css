@@ -416,24 +416,24 @@ body {
 }
 .casestudy-main .casestudy-project-overview .casestudy-lineart {
   max-width: 200px;
-  margin: 3em auto;
+  margin: 10em auto 3em auto;
 }
 .casestudy-main .casestudy-project-overview .casestudy-lineart img {
   box-shadow: none;
 }
 .casestudy-main .casestudy-project-overview .casestudy-hero {
   display: flex;
-  justify-content: space-between;
-  max-width: 1000px;
+  justify-content: center;
   margin: 0 auto;
 }
 .casestudy-main .casestudy-project-overview .casestudy-hero .casestudy-title {
-  max-width: 400px;
+  max-width: 500px;
 }
 .casestudy-main .casestudy-project-overview .casestudy-hero .casestudy-title h1 {
   font-family: "the-seasons", sans-serif;
   color: #333;
   margin: 0.5em auto;
+  padding-right: 0.5em;
   font-size: clamp(3em, 6vw, 6em);
   text-align: center;
   text-transform: none;
@@ -446,7 +446,10 @@ body {
   margin-top: 1em;
 }
 .casestudy-main .casestudy-project-overview .casestudy-hero .intro-paragraph p {
-  margin: 0 auto;
+  margin: 0.5em auto;
+}
+.casestudy-main .casestudy-project-overview .casestudy-hero .intro-paragraph hr {
+  margin-bottom: 0.9em;
 }
 .casestudy-main .casestudy-project-overview .casestudy-hero .casestudy-hero-image-absolute {
   position: absolute;
@@ -1049,8 +1052,9 @@ img {
   }
   img,
   video {
-    height: 200px;
+    max-height: 300px;
     max-width: 100%;
+    object-fit: cover;
   }
   .header-nav,
   .footer-nav,
@@ -1112,7 +1116,6 @@ img {
     text-align: left;
   }
   .casestudy-main img {
-    max-height: 200px;
     width: auto;
     box-shadow: none;
   }
@@ -1122,8 +1125,13 @@ img {
   .casestudy-main .casestudy-project-overview .casestudy-lineart img {
     object-fit: cover;
   }
+  .casestudy-main .casestudy-project-overview .row-mobile {
+    display: flex;
+    flex-direction: row;
+  }
   .casestudy-main .casestudy-project-overview .casestudy-hero {
     flex-direction: column;
+    justify-content: center;
   }
   .casestudy-main .casestudy-project-overview .casestudy-hero .casestudy-overview {
     width: 100%;
@@ -1165,7 +1173,6 @@ img {
     width: auto;
   }
   .casestudy-main .casestudy-more-projects {
-    max-width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1173,13 +1180,12 @@ img {
   .casestudy-main .casestudy-more-projects .more-projects .previous-project,
   .casestudy-main .casestudy-more-projects .more-projects .next-project {
     padding: 0.5em;
-  }
-  .casestudy-main .casestudy-more-projects .more-projects a {
-    border: 1px solid #333;
-    padding: 0.5em;
+    justify-content: space-between;
   }
   .casestudy-main .casestudy-more-projects .more-projects span {
-    font-size: 75%;
+    font-family: "apparat-light", sans-serif;
+    text-transform: uppercase;
+    font-size: 50%;
   }
   .row {
     display: flex;
@@ -1190,21 +1196,14 @@ img {
   .row .one-half {
     width: 100%;
   }
-  .row .image-collection {
-    display: flex;
-    flex-direction: column;
-  }
-  .row .image-collection img {
-    margin: 1.5em;
-  }
   .fittree-type,
   .fittree-images {
     display: flex;
-    flex-wrap: wrap;
   }
   .fittree-type img,
   .fittree-images img {
     max-height: 50px;
+    padding: 0;
   }
   .illustrations-images {
     flex-direction: column;

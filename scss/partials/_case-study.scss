@@ -14,7 +14,7 @@
 
         .casestudy-lineart {
             max-width: 200px;
-            margin: 3em auto;
+            margin: 10em auto 3em auto;
 
             img {
                 box-shadow: none;
@@ -23,17 +23,18 @@
 
         .casestudy-hero {
             display: flex;
-            justify-content: space-between;
-            max-width: 1000px;
+            justify-content: center;
+            // max-width: 1000px;
             margin: 0 auto;
 
             .casestudy-title {
-                max-width: 400px;
+                max-width: 500px;
 
                 h1 {
                     font-family: $title;
                     color: $coffee;
                     margin: .5em auto;
+                    padding-right: .5em;
                     font-size: clamp(3em, 6vw, 6em);
                     text-align: center;
                     text-transform: none;
@@ -46,10 +47,18 @@
                 text-transform: none;
                 font-size: clamp(1.25em, 1.5vw, 1.5em);
                 margin-top: 1em;
+
             }
 
-            .intro-paragraph p {
-                margin: 0 auto;
+            .intro-paragraph {
+                p {
+                    margin: .5em auto;
+                }
+
+                hr {
+                    margin-bottom: .9em;
+                }
+
             }
 
             .casestudy-hero-image-absolute {
