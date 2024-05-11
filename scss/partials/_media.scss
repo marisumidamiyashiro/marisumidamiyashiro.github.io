@@ -111,7 +111,7 @@ img {
 
         p {
             font-size: 85%;
-            text-align: center;
+            text-align: left;
         }
 
         img {
@@ -122,7 +122,16 @@ img {
 
         .casestudy-project-overview {
 
+            .casestudy-lineart {
+                max-width: fit-content;
+
+                img {
+                    object-fit: cover;
+                }
+            }
+
             .casestudy-hero {
+                flex-direction: column;
 
                 .casestudy-overview {
                     width: 100%;
@@ -131,7 +140,7 @@ img {
                     .casestudy-software,
                     .casestudy-year {
                         justify-content: center;
-                        text-align: center;
+                        text-align: left;
 
                         h3 {
                             text-transform: uppercase;

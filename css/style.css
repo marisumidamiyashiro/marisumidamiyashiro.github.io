@@ -1109,12 +1109,21 @@ img {
   }
   .casestudy-main p {
     font-size: 85%;
-    text-align: center;
+    text-align: left;
   }
   .casestudy-main img {
     max-height: 200px;
     width: auto;
     box-shadow: none;
+  }
+  .casestudy-main .casestudy-project-overview .casestudy-lineart {
+    max-width: fit-content;
+  }
+  .casestudy-main .casestudy-project-overview .casestudy-lineart img {
+    object-fit: cover;
+  }
+  .casestudy-main .casestudy-project-overview .casestudy-hero {
+    flex-direction: column;
   }
   .casestudy-main .casestudy-project-overview .casestudy-hero .casestudy-overview {
     width: 100%;
@@ -1123,7 +1132,7 @@ img {
   .casestudy-main .casestudy-project-overview .casestudy-hero .casestudy-overview .casestudy-software,
   .casestudy-main .casestudy-project-overview .casestudy-hero .casestudy-overview .casestudy-year {
     justify-content: center;
-    text-align: center;
+    text-align: left;
   }
   .casestudy-main .casestudy-project-overview .casestudy-hero .casestudy-overview .casestudy-software h3,
   .casestudy-main .casestudy-project-overview .casestudy-hero .casestudy-overview .casestudy-year h3 {
