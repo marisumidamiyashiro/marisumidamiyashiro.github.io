@@ -24,6 +24,14 @@ img {
         }
     }
 
+    .card {
+        .poster {
+            img {
+                max-height: none;
+            }
+        }
+    }
+
     // IMAGES
 
     img,

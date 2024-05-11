@@ -1050,6 +1050,9 @@ img {
   .swiper img {
     height: 300px;
   }
+  .card .poster img {
+    max-height: none;
+  }
   img,
   video {
     max-height: 300px;
