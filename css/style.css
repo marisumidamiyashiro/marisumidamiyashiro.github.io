@@ -442,7 +442,7 @@ body {
   font-family: "the-seasons", sans-serif;
   color: #333;
   text-transform: none;
-  font-size: clamp(1em, 1.5vw, 1.5em);
+  font-size: clamp(1.25em, 1.5vw, 1.5em);
   margin-top: 1em;
 }
 .casestudy-main .casestudy-project-overview .casestudy-hero .intro-paragraph p {
@@ -492,7 +492,7 @@ body {
 }
 .casestudy-main .casestudy-project-overview .casestudy-hero .casestudy-details h3 {
   font-family: "the-seasons", sans-serif;
-  font-size: clamp(1em, 1.5vw, 1.5em);
+  font-size: clamp(1.25em, 1.5vw, 1.5em);
   text-transform: none;
 }
 .casestudy-main .casestudy-project-overview .casestudy-hero .casestudy-details span {
