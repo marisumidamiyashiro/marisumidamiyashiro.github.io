@@ -1267,6 +1267,23 @@ img {
     flex-direction: column;
   }
 }
+.pele-award {
+  display: flex;
+}
+.pele-award .pele-triangle {
+  background-color: rgb(245, 201, 25);
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  width: 1em;
+  height: 1em;
+}
+.pele-award span {
+  font-family: "apparat-light", sans-serif;
+  text-transform: uppercase;
+  color: #333;
+  font-size: 1em;
+  padding-left: 0.5em;
+}
+
 @media (min-width: 767px) {
   .mobile-nav {
     position: absolute;

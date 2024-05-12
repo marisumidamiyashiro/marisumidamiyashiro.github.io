@@ -280,6 +280,27 @@ img {
     }
 }
 
+// PELE AWARDS
+
+.pele-award {
+    display: flex;
+
+    .pele-triangle {
+        background-color: rgb(245, 201, 25);
+        clip-path: polygon(50% 0, 100% 100%, 0 100%);
+        width: 1em;
+        height: 1em;
+    }
+
+    span {
+        font-family: $body;
+        text-transform: uppercase;
+        color: #333;
+        font-size: 1em;
+        padding-left: .5em;
+    }
+}
+
 
 
 @media (min-width: 767px) {
