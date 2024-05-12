@@ -54,9 +54,33 @@
         transition: .3s;
         z-index: 2;
 
+        &.pele {
+            h1 {
+                padding-top: .5em;
+            }
+        }
+
+        .pele-award {
+            display: flex;
+            align-items: center;
+            padding: 1em 0 0 1.5em;
+
+            .pele-triangle {
+                background-color: rgb(245, 201, 25);
+                clip-path: polygon(50% 0, 100% 100%, 0 100%);
+                width: 1.25em;
+                height: 1.25em;
+            }
+
+            h2 {
+                color: #333;
+                font-size: .8em;
+                padding-left: .5em;
+            }
+        }
+
         h1 {
-            font-family: $title;
-            text-transform: lowercase;
+            letter-spacing: 1px;
             color: #333;
             font-size: 1.5em;
             padding: 1em;

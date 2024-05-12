@@ -28,6 +28,9 @@
             margin: 0 auto;
 
             .casestudy-title {
+                display: flex;
+                flex-direction: column;
+                align-items: left;
                 max-width: 500px;
 
                 h1 {
@@ -667,5 +670,26 @@
             border: .5px solid #ccc;
             padding: 1em;
         }
+    }
+}
+
+// PELE AWARDS
+
+.pele-award {
+    display: flex;
+
+    .pele-triangle {
+        background-color: rgb(245, 201, 25);
+        clip-path: polygon(50% 0, 100% 100%, 0 100%);
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    span {
+        font-family: $body;
+        text-transform: uppercase;
+        color: #333;
+        font-size: 1.25em;
+        padding-left: .5em;
     }
 }
