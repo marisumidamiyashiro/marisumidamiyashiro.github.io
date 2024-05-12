@@ -572,9 +572,8 @@ body {
 .casestudy-main .casestudy-project-process .casestudy-process-images img {
   margin: 1em;
 }
-.casestudy-main .casestudy-project-process .casestudy-process-images.quest img {
-  border: none;
-  box-shadow: none;
+.casestudy-main .casestudy-project-process .casestudy-process-images .img-no-margin {
+  margin: 0;
 }
 .casestudy-main .casestudy-project-process .casestudy-process-images .image-collection {
   display: flex;
@@ -959,6 +958,10 @@ body {
 
 .quest-logo {
   max-height: 300px;
+}
+
+.quest img {
+  box-shadow: none;
 }
 
 .illustrations h1 {

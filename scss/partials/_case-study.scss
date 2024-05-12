@@ -171,11 +171,8 @@
                 margin: 1em;
             }
 
-            &.quest {
-                img {
-                    border: none;
-                    box-shadow: none;
-                }
+            .img-no-margin {
+                margin: 0;
             }
 
             .image-collection {
@@ -641,6 +638,13 @@
 
 .quest-logo {
     max-height: 300px;
+}
+
+.quest {
+
+    img {
+        box-shadow: none;
+    }
 }
 
 // ILLUSTRATIONS
