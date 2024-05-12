@@ -170,8 +170,8 @@ nav li a {
 
 .card {
   position: relative;
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   background: #ccc;
   border-radius: 10px;
   overflow: hidden;
@@ -203,11 +203,13 @@ nav li a {
   left: 0;
   width: 100%;
   height: 25%;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.925);
   transition: 0.3s;
   z-index: 2;
 }
 .card .details h1 {
+  font-family: "the-seasons", sans-serif;
+  text-transform: lowercase;
   color: #333;
   font-size: 1.5em;
   padding: 1em;
@@ -347,27 +349,34 @@ body {
 }
 .about .container .about-me {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 2em;
+  margin: 5em 0 3em 0;
 }
-.about .container .about-me h1 {
-  font-family: "liebelotte-swell", sans-serif;
+.about .container .about-me .about-title {
+  position: relative;
+  rotate: 270deg;
+  margin-right: -15em;
+}
+.about .container .about-me .about-title h1 {
+  font-family: "the-seasons", sans-serif;
   color: #333;
   text-transform: none;
-  font-size: clamp(4em, 18vw, 18em);
+  font-size: clamp(4em, 11vw, 11em);
 }
-.about .container .about-me p {
+.about .container .about-me .about-body {
+  margin-left: 1em;
   font-family: "apparat-light", sans-serif;
   line-height: 1.5;
 }
+.about .container .about-me .about-body img {
+  max-height: 250px;
+  max-width: 100%;
+  object-fit: cover;
+}
 .about .container .button {
   text-decoration: none;
-  padding: 2em;
   color: white;
   background-color: #333;
   padding: 1em 1.5em;
-  margin: 2em;
   transition: all 0.3s ease-out;
 }
 .about .container .button:hover {

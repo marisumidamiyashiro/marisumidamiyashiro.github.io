@@ -134,31 +134,45 @@ body {
 
         .about-me {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            // flex-direction: column;
+            // align-items: center;
             // border: 1px solid blue;
-            margin: 2em;
+            margin: 5em 0 3em 0;
 
-            h1 {
-                font-family: $script;
-                color: $coffee;
-                text-transform: none;
-                font-size: clamp(4em, 18vw, 18em);
+            .about-title {
+                position: relative;
+                rotate: 270deg;
+                margin-right: -15em;
+
+                h1 {
+                    font-family: $title;
+                    color: $coffee;
+                    text-transform: none;
+                    font-size: clamp(4em, 11vw, 11em);
+                }
             }
 
-            p {
+            .about-body {
+                // position: inherit;
+                // display: flex;
+                // flex-direction: column;
+                margin-left: 1em;
                 font-family: $body;
                 line-height: 1.5;
+
+                img {
+                    max-height: 250px;
+                    max-width: 100%;
+                    object-fit: cover;
+                }
             }
         }
 
         .button {
             text-decoration: none;
-            padding: 2em;
             color: white;
             background-color: #333;
             padding: 1em 1.5em;
-            margin: 2em;
             transition: all .3s ease-out;
 
             &:hover {

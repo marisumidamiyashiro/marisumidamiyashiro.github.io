@@ -13,8 +13,8 @@
 
 .card {
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     background: #ccc;
     border-radius: 10px;
     overflow: hidden;
@@ -50,11 +50,13 @@
         left: 0;
         width: 100%;
         height: 25%;
-        background: rgba(255, 255, 255, 0.7);
+        background: rgba(255, 255, 255, 0.925);
         transition: .3s;
         z-index: 2;
 
         h1 {
+            font-family: $title;
+            text-transform: lowercase;
             color: #333;
             font-size: 1.5em;
             padding: 1em;
