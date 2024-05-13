@@ -363,25 +363,20 @@ body {
 .about .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .about .container .about-me {
   display: flex;
-  margin: 5em 0 3em 0;
+  flex-direction: column;
 }
 .about .container .about-me .about-title {
-  position: relative;
-  rotate: 270deg;
-  margin-right: -15em;
+  margin-top: 10em;
 }
 .about .container .about-me .about-title h1 {
   font-family: "the-seasons", sans-serif;
-  color: #333;
   text-transform: none;
-  font-size: clamp(4em, 11vw, 11em);
+  color: #333;
 }
 .about .container .about-me .about-body {
-  margin-left: 1em;
   font-family: "apparat-light", sans-serif;
   line-height: 1.5;
 }
@@ -396,6 +391,8 @@ body {
   background-color: #333;
   padding: 1em 1.5em;
   transition: all 0.3s ease-out;
+  width: 200px;
+  text-align: center;
 }
 .about .container .button:hover {
   background-color: #ffadad;
@@ -403,13 +400,14 @@ body {
 }
 .about .container .contact-info {
   display: flex;
+  justify-content: start;
+  gap: 5em;
 }
 .about .container .contact-info h3 {
   font-family: "the-seasons", sans-serif;
   text-transform: none;
-  font-size: clamp(2em, 3vw, 3em);
-  text-transform: capitalize;
-  margin: 2em auto 0.5em auto;
+  font-size: clamp(1em, 2vw, 2em);
+  margin: 2em 0 0.5em 0;
 }
 .about .container .contact-info span {
   font-family: "apparat-light", sans-serif;
@@ -417,18 +415,20 @@ body {
 }
 .about .container .contact-info a {
   display: flex;
-  align-items: center;
+  color: #333;
   text-decoration: none;
+  padding-right: 1em;
   font-family: "apparat-light", sans-serif;
+  transition: all 0.1s ease-in-out;
 }
-.about .container .contact-info a img {
-  width: 50px;
-  margin: 0.5em;
+.about .container .contact-info a:hover {
+  color: rgb(255, 214, 214);
+  text-decoration: underline;
+  text-underline-offset: 0.5em;
 }
-.about .container .contact-info .contact-details {
+.about .container .contact-info .social-media ul {
   display: flex;
-  flex-direction: column;
-  margin: 0 2em;
+  list-style: none;
 }
 
 .casestudy-main {
@@ -1169,6 +1169,20 @@ img {
   }
   .container {
     padding: 0 2em;
+  }
+  .about .about-me,
+  .about .contact-info {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .about .contact-info {
+    display: flex;
+    gap: 0 !important;
+    margin: 0;
+  }
+  .about .contact-info .social-media li {
+    margin-top: 1em;
   }
   .casestudy-main p {
     font-size: 85%;

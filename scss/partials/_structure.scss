@@ -129,34 +129,28 @@ body {
     .container {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        // align-items: center;
         // border: 1px solid red;
 
         .about-me {
             display: flex;
-            // flex-direction: column;
+            flex-direction: column;
             // align-items: center;
             // border: 1px solid blue;
-            margin: 5em 0 3em 0;
+            // margin: 5em 0 3em 0;
 
             .about-title {
-                position: relative;
-                rotate: 270deg;
-                margin-right: -15em;
+                // position: relative;
+                margin-top: 10em;
 
                 h1 {
                     font-family: $title;
-                    color: $coffee;
                     text-transform: none;
-                    font-size: clamp(4em, 11vw, 11em);
+                    color: $coffee;
                 }
             }
 
             .about-body {
-                // position: inherit;
-                // display: flex;
-                // flex-direction: column;
-                margin-left: 1em;
                 font-family: $body;
                 line-height: 1.5;
 
@@ -174,6 +168,8 @@ body {
             background-color: #333;
             padding: 1em 1.5em;
             transition: all .3s ease-out;
+            width: 200px;
+            text-align: center;
 
             &:hover {
                 background-color: $coral;
@@ -184,13 +180,15 @@ body {
 
         .contact-info {
             display: flex;
+            justify-content: start;
+            gap: 5em;
 
             h3 {
                 font-family: $title;
                 text-transform: none;
-                font-size: clamp(2em, 3vw, 3em);
-                text-transform: capitalize;
-                margin: 2em auto .5em auto;
+                font-size: clamp(1em, 2vw, 2em);
+                // text-transform: capitalize;
+                margin: 2em 0 .5em 0;
             }
 
             span {
@@ -200,20 +198,26 @@ body {
 
             a {
                 display: flex;
-                align-items: center;
+                color: $coffee;
                 text-decoration: none;
+                padding-right: 1em;
+                // align-items: center;
                 font-family: $body;
+                transition: all .1s ease-in-out;
 
-                img {
-                    width: 50px;
-                    margin: .5em;
+                &:hover {
+                    color: $light-pink;
+                    text-decoration: underline;
+                    text-underline-offset: .5em;
                 }
+
             }
 
-            .contact-details {
-                display: flex;
-                flex-direction: column;
-                margin: 0 2em;
+            .social-media {
+                ul {
+                    display: flex;
+                    list-style: none;
+                }
             }
         }
     }
