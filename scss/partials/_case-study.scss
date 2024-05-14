@@ -139,20 +139,23 @@
                 align-items: center;
 
                 .button {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
                     text-align: center;
                     text-decoration: none;
                     text-transform: uppercase;
                     font-family: $body;
-                    padding: 1em 1.5em;
-                    margin: .5em;
+                    font-size: .8em;
+                    line-height: 1.25em;
+                    padding: 1em;
+                    margin: .8em;
                     background-color: $coffee;
                     color: $light-pink;
                     transition: all .3s ease-out;
                     width: 200px;
                     border-radius: 10px;
+
+                    .small-text-link {
+                        font-size: .75em;
+                    }
 
                     &:hover {
                         background-color: $light-pink;
@@ -354,24 +357,6 @@
         border: none;
         box-shadow: none;
         padding: 2em;
-    }
-}
-
-.fittree-button {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: $body;
-    font-weight: 700;
-    color: $coffee;
-    padding: 1.5em;
-    background-color: $light-pink;
-    border-radius: 24px;
-    margin: .5em;
-
-    &:hover {
-        background-color: $coffee;
-        color: $coral;
-        font-style: italic;
     }
 }
 
@@ -699,7 +684,6 @@
             text-transform: uppercase;
             color: #333;
             font-size: 1em;
-            padding-left: .5em;
             line-height: 1 !important;
         }
     }
@@ -707,7 +691,7 @@
     .award-info {
         display: flex;
         flex-direction: column;
-        padding: 1em;
+        padding-top: 1em;
         font-size: .7em;
     }
 }

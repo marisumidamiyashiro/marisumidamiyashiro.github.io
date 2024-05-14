@@ -39,6 +39,6 @@ const myobserver = new IntersectionObserver((entries) => {
     });
 });
 
-Array.from(document.querySelectorAll('.section-line'))?.forEach((el) => {
+Array.from(document.querySelectorAll('.section-line, .casestudy-title, .casestudy-lineart'))?.forEach((el) => {
     myobserver.observe(el);
 });

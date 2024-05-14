@@ -1,5 +1,8 @@
 // SCROLL TRIGGERED ANIMATIONS
 
+
+// SECTION LINE ANIMATION
+
 [data-scroll="scalex"].section-line {
     --line-scale-x: 0;
     --line-transform-origin: left;
@@ -10,8 +13,33 @@
         transition: scale 1s ease-in-out;
     }
 
-
     &[data-inview] {
         --line-scale-x: 1;
+    }
+}
+
+// CASE STUDY TITLE ANIMATIONS
+
+[data-scroll="slide-up"].casestudy-title {
+    transition: 1s ease-in-out;
+    transform: translateY(50px);
+    opacity: 0;
+
+    &[data-inview] {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+// LINE ART ANIMATIONS
+
+[data-scroll="push-forward"].casestudy-lineart {
+    transition: 1s ease-in;
+    transform: scale(0);
+    opacity: 0;
+
+    &[data-inview] {
+        transform: scale(1);
+        opacity: 1;
     }
 }
