@@ -29,7 +29,7 @@ body {
 
         h1 {
             font-family: $script;
-            color: $coral;
+            color: $coffee;
             text-transform: none;
             font-size: clamp(4em, 18vw, 18em);
             line-height: 1;
@@ -39,6 +39,11 @@ body {
             font-family: $title;
             text-transform: none;
             font-size: clamp(2em, 5vw, 5em);
+            color: $coffee;
+
+            span {
+                color: $sand;
+            }
         }
     }
 }
