@@ -988,19 +988,31 @@ body {
 
 .pele-award {
   display: flex;
+  flex-direction: column;
 }
-.pele-award .pele-triangle {
+.pele-award .pele-title {
+  display: flex;
+  align-items: end;
+}
+.pele-award .pele-title .pele-triangle {
   background-color: rgb(245, 201, 25);
   clip-path: polygon(50% 0, 100% 100%, 0 100%);
-  width: 1.5em;
-  height: 1.5em;
+  width: 1.25em;
+  height: 1.25em;
 }
-.pele-award span {
+.pele-award .pele-title span {
   font-family: "apparat-light", sans-serif;
   text-transform: uppercase;
   color: #333;
-  font-size: 1.25em;
+  font-size: 1em;
   padding-left: 0.5em;
+  line-height: 1 !important;
+}
+.pele-award .award-info {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  font-size: 0.7em;
 }
 
 h1,
@@ -1124,34 +1136,60 @@ img {
     left: -99999px;
     top: -99999px;
   }
-  .mobile-nav {
+  header.mobile-nav {
     position: fixed;
-    bottom: 0;
+    top: 0;
     height: 75px;
     width: 100%;
-    background: rgb(238, 229, 227);
+    background: white;
+    border-bottom: 1px solid rgb(238, 229, 227);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header.mobile-nav h3 {
+    font-family: "the-seasons", sans-serif;
+    text-transform: lowercase;
+    color: #333;
+    padding-top: 10px;
+  }
+  header.mobile-nav span {
+    font-family: "apparat-light", sans-serif;
+    color: #333;
+    padding: 2px;
+    font-size: 80%;
+  }
+  footer.mobile-nav {
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background: white;
+    border-top: 1px solid rgb(238, 229, 227);
     z-index: 10;
   }
-  .mobile-nav ul {
+  footer.mobile-nav ul {
     display: flex;
     justify-content: space-around;
   }
-  .mobile-nav li {
+  footer.mobile-nav li {
     list-style: none;
     display: block;
   }
-  .mobile-nav li a {
+  footer.mobile-nav li a {
     display: flex;
     align-items: center;
     justify-content: center;
     color: #333;
     font-size: 1rem;
-    padding: 10px 50px;
+    padding-top: 10px;
   }
-  .mobile-nav li a .nav-icon {
-    height: 50px;
+  footer.mobile-nav li a .nav-icon {
+    height: 30px;
   }
-  .mobile-nav li a .nav-icon img {
+  footer.mobile-nav li a .nav-icon img {
     object-fit: cover;
   }
   .caption {

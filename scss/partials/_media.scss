@@ -67,13 +67,43 @@ img {
         top: -99999px;
     }
 
-    .mobile-nav {
+    header.mobile-nav {
         position: fixed;
-        bottom: 0;
+        top: 0;
         height: 75px;
         // overflow: hidden;
         width: 100%;
-        background: $sand;
+        background: white;
+        border-bottom: 1px solid $sand;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+            font-family: $title;
+            text-transform: lowercase;
+            color: $coffee;
+            padding-top: 10px;
+        }
+
+        span {
+            font-family: $body;
+            color: $coffee;
+            padding: 2px;
+            font-size: 80%;
+        }
+    }
+
+    footer.mobile-nav {
+        position: fixed;
+        bottom: 0;
+        height: 50px;
+        // overflow: hidden;
+        width: 100%;
+        background: white;
+        border-top: 1px solid $sand;
         z-index: 10;
 
         ul {
@@ -91,10 +121,10 @@ img {
                 justify-content: center;
                 color: $coffee;
                 font-size: 1rem;
-                padding: 10px 50px;
+                padding-top: 10px;
 
                 .nav-icon {
-                    height: 50px;
+                    height: 30px;
 
                     img {
                         object-fit: cover;
