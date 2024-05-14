@@ -453,6 +453,13 @@ body {
 .casestudy-main .casestudy-project-overview .casestudy-lineart img {
   box-shadow: none;
 }
+.casestudy-main .casestudy-project-overview .casestudy-lineart .cls-1 {
+  fill: none;
+  stroke: #333;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.92px;
+}
 .casestudy-main .casestudy-project-overview .casestudy-hero {
   display: flex;
   justify-content: center;

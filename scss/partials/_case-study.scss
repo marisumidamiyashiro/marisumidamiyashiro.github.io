@@ -19,6 +19,14 @@
             img {
                 box-shadow: none;
             }
+
+            .cls-1 {
+                fill: none;
+                stroke: $coffee;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 1.92px;
+            }
         }
 
         .casestudy-hero {

@@ -34,12 +34,12 @@
 // LINE ART ANIMATIONS
 
 // [data-scroll="push-forward"].casestudy-lineart {
-//     animation: dash 8s forwards ease-in-out;
+//     transition: 8s forwards ease-in-out;
 //     stroke-dasharray: 10000;
 //     stroke-dashoffset: 10000;
 
 //     &[data-inview] {
-//         stroke-dashoffset: 10000;
+//         stroke-dashoffset: 0;
 //     }
 // }
 
